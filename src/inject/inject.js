@@ -12,7 +12,7 @@ chrome.extension.sendMessage({}, function(response) {
 					function() {
 						var element = this;
 						// Check for the string "Yes"
-						if ($(element).html().indexOf("Join") >= 0) {
+						if ($(element).html().indexOf("Yes") >= 0) {
 							// Simulate a click
 							$.each(['mouseover', 'mousedown', 'mouseup','mouseout'], function (index, value) {
 								var evt = new MouseEvent(value, {
